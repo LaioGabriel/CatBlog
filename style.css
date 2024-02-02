@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+:root{
+    font-size: 62.5%; 
+
+}
+input, input::placeholder ,body, html{
+    font-family: "Mulish", sans-serif;
+}
+header{
+    background-color: #065e7c;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.8rem;
+    padding-bottom: 5rem;
+    animation: move-down 1.5s;
+}
+header img{
+    margin-top: 1.2rem;
+    min-height: 4rem;
+    min-width: 4rem;
+   
+}
+header #avatar{
+margin-right: 4.5rem;
+border-radius: 4rem;
+}
+header #paw{
+    margin-left: 2rem;
+}
+main{
+    animation: slide 2s;
+}
+input{
+   
+    border: none;
+    border-radius: 0.6rem;
+    min-width: 100%;
+    padding: 1.5rem;
+    
+    margin-top: 1rem;
+    background-color: #387E96;
+    color: white;
+}
+input::placeholder{
+    color: white;
+    text-align: center;
+}
+/*Main */
+#Principal{
+border-radius: 0.5;
+    overflow: hidden;
+}
+main h1{
+    color: #202024;
+    font-size: 2.4rem;
+    margin-left: 2.8rem;
+}
+#likes{
+    display: flex;
+    margin-left: 2.8rem;
+    gap: 1.1rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+main p{
+    
+    font-size: 1.5rem;
+    margin: auto;
+    width: 86vw;
+}
+#grade{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+    gap: 3.2rem;
+}
+.celula{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+.textin p{
+   
+    font-size: 1.1rem;
+    max-width: 20rem;
+   
+}
+/*Footer*/
+.celula img:hover{
+    transition-duration: 1s;
+    transform: scale(1.06);
+}
+footer{
+    background-color: #065e7c;
+    height: 8vh;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    animation: move-up 1.5s;
+}
+footer p{
+    padding-top: 3.3rem;
+}
+
+@media(min-width: 1023px){
+    header input{
+        width: 120rem;
+    }
+    #separate{
+        display: flex;
+    }
+    #Principal{
+        width: 60.3rem;
+        padding-left: 3rem;
+    }
+    #texto_principal{
+        max-width:80rem ;
+        padding-left: 2.8rem;
+    }
+    #media_button{
+        display: flex;
+    }
+    #grade{
+        padding-left: 18rem;
+    }
+    #artigos{
+        padding-left: 15.3rem;
+    }
+   
+}
+@keyframes move-down{
+    0%{
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes move-up{
+    0%{
+        transform: translateY(100%);
+    }
+
+}
+@keyframes slide{
+ 0%{
+    transform: translateX(-100%);
+ }
+}
